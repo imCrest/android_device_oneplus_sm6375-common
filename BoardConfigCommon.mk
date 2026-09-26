@@ -43,6 +43,8 @@ AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
 AUDIO_FEATURE_ENABLED_GEF_SUPPORT := true
 AUDIO_FEATURE_ENABLED_GKI := true
 AUDIO_FEATURE_ENABLED_INSTANCE_ID := true
+$(call soong_config_set,qtiaudio,feature_gki,true)
+$(call soong_config_set,qtiaudio,feature_instance_id,true)
 AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
 AUDIO_FEATURE_ENABLED_SSR := true
 AUDIO_FEATURE_ENABLED_SVA_MULTI_STAGE := true
@@ -93,6 +95,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_RAMDISK_USE_LZ4 := true
 TARGET_KERNEL_SOURCE := kernel/oneplus/sm6375
 TARGET_KERNEL_CONFIG := vendor/holi-qgki_defconfig vendor/debugfs.config
+TARGET_BOARD_KERNEL_HEADERS := device/oneplus/sm6375-common/kernel-headers
 
 # Kernel modules
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(COMMON_PATH)/modules.blocklist
