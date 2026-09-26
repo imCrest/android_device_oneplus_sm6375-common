@@ -214,6 +214,8 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Build broken rules
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+BUILD_BROKEN_PREBUILT_ELF_FILES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # Inherit the proprietary files
 include vendor/oneplus/sm6375-common/BoardConfigVendor.mk
