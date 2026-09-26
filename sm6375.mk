@@ -60,7 +60,7 @@ PRODUCT_PACKAGES += \
     libvolumelistener \
     sound_trigger.primary.holi:32
 
-AUDIO_HAL_DIR := $(LOCAL_PATH)/audio/configs/holi
+AUDIO_HAL_DIR := $(LOCAL_PATH)/audio
 
 # Audio Configs
 PRODUCT_COPY_FILES += \
@@ -352,9 +352,6 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils_prd.xml \
     telephony-ext
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
-
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.qti
@@ -383,6 +380,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh
 
 PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom/wlan/qcwcn/wpa_supplicant_8_lib \
     vendor/qcom/opensource/usb/etc
 
 # Vibrator
