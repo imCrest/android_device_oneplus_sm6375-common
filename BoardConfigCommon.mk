@@ -94,7 +94,7 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_RAMDISK_USE_LZ4 := true
 TARGET_KERNEL_SOURCE := kernel/oneplus/sm6375
-TARGET_KERNEL_CONFIG := vendor/holi-qgki_defconfig vendor/debugfs.config
+TARGET_KERNEL_CONFIG := vendor/holi-qgki_defconfig
 TARGET_BOARD_KERNEL_HEADERS := device/oneplus/sm6375-common/kernel-headers
 
 # Kernel modules
