@@ -57,6 +57,14 @@ AUDIO_HAL_DIR := $(LOCAL_PATH)/audio
 
 # Audio Configs
 PRODUCT_COPY_FILES += \
+    device/oneplus/sm6375-common/modules/modules.load:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.load \
+    device/oneplus/sm6375-common/modules/modules.dep:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.dep \
+    device/oneplus/sm6375-common/modules/modules.dep.bin:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.dep.bin \
+    device/oneplus/sm6375-common/modules/modules.alias:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.alias \
+    device/oneplus/sm6375-common/modules/modules.alias.bin:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.alias.bin \
+    device/oneplus/sm6375-common/modules/modules.softdep:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.softdep \
+    device/oneplus/sm6375-common/modules/modules.symbols:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.symbols \
+    device/oneplus/sm6375-common/modules/modules.symbols.bin:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/modules.symbols.bin \
     $(AUDIO_HAL_DIR)/configs/holi/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     $(AUDIO_HAL_DIR)/configs/holi/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
     $(AUDIO_HAL_DIR)/configs/holi/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
