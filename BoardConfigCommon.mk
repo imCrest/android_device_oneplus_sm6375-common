@@ -79,6 +79,7 @@ BOARD_KERNEL_CMDLINE := \
     androidboot.hardware=qcom \
     androidboot.memcg=1 \
     androidboot.usbcontroller=4e00000.dwc3 \
+    androidboot.selinux=permissive \
     cgroup.memory=nokmem,nosocket \
     loop.max_part=7 \
     lpm_levels.sleep_disabled=1 \
@@ -98,6 +99,7 @@ TARGET_KERNEL_CONFIG := vendor/holi-qgki_defconfig
 TARGET_BOARD_KERNEL_HEADERS := device/oneplus/sm6375-common/kernel-headers
 
 # Kernel modules
+KERNEL_MODULES_INSTALL := vendor_dlkm
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(COMMON_PATH)/modules.blocklist
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load))
 TARGET_MODULE_ALIASES += wlan.ko:qca_cld3_wlan.ko
