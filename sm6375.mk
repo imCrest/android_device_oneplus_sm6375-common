@@ -63,7 +63,7 @@ PRODUCT_PACKAGES += \
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8350/audio
 
 # Dolby Atmos
-$(call inherit-product, hardware/dolby/dolby.mk)
+$(call inherit-product-if-exists, hardware/dolby/dolby.mk)
 
 # Audio Configs
 PRODUCT_COPY_FILES += \
